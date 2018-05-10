@@ -24,7 +24,7 @@ function anderson_plot(iris) {
 	.range([0, sh]);
 
     svg = d3.select('#viz').append('svg')
-	.attr('width', sw * iris.length)
+	.attr('width', sw * sc + (sw / 2))
 	.attr('height', sh * (iris.length / sc));
 
     svg.selectAll('rect.sepal')
