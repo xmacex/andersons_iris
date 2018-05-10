@@ -35,8 +35,7 @@ function anderson_plot(iris) {
 	.attr('x', (d, i) => ((sw / 2) + (i % sc) * x.range()[1] + (sw / 2) - (x(d['sepal width (cm)']) / 2)))
 	.attr('y', (d, i) => sh * Math.floor(i / sc) - y(d['sepal length (cm)']))
 	.attr('width', d => x(d['sepal width (cm)']))
-	.attr('height', d => y(d['sepal length (cm)']))
-	.style('opacity', 0.5);
+	.attr('height', d => y(d['sepal length (cm)']));
 
     svg.selectAll('rect.petal')
 	.data(iris)
